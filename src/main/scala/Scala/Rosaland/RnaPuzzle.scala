@@ -1,8 +1,27 @@
 package Scala.Rosaland
 
-/**
- * Created by stuart on 13/09/2015.
+/*
+ * Transcribing DNA into RNA
+ *
+ * Url: http://rosalind.info/problems/rna/
+ *
+ * Problem
+ *
+ * An RNA string is a string formed from the alphabet containing 'A', 'C', 'G', and 'U'.
+ * Given a DNA string t corresponding to a coding strand, its transcribed RNA string u is formed by replacing all occurrences of 'T' in t with 'U' in u.
+ *
+ * Given: A DNA string t having length at most 1000 nt.
+ *
+ * Return: The transcribed RNA string of t.
+ *
+ * Sample Dataset
+ *
+ * GATGGAACTTGACTACGTAAATT
+ * Sample Output
+ *
+ * GAUGGAACUUGACUACGUAAAUU
+ *
  */
-class RnaPuzzle {
-
+object RnaPuzzle {
+    def solve(s : String) : String = { s.replace('T','U') }
 }
